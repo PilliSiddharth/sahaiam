@@ -80,6 +80,7 @@
 #     print("Server listening on: http://localhost:" + str(HTTP_SERVER_PORT))
 #     server.serve_forever()
 
+# thank you lord my code is finally getting transcriptions
 import base64
 import json
 import threading
