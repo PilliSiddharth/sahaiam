@@ -1,0 +1,14 @@
+{
+    "type": "service_account",
+    "project_id": "zeta-range-432214-u0",
+    "private_key_id": "9d1a4ac55f790a4e78f8b10985a50ee4c2a1a4d7",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDCMoaQU86/iB1T\nkpKBGnsxMrRux+dYmFZIEvikewbvgmPsbHd+A+ucLE8iHLccDOSHjTrKDXk+NcrB\nyPtBb1snp8SAEJkdnX8anKzmX9qcK0zDHcryIequvBHqjmMVlbfxagqHoOn7gdIM\ngOPcnlPYeRCSzUeo/Q+2dtPelb4YS4mzQlLjatN6UignQXk4SSmQHKaahNoIBKqS\nVUC3AaXIafCd/JJMMwqdpw2hrqkM/MT15x+0eFciWQrbHdCQ+/ktNOYG/qPmLg4a\nd2mp584EyR4I4uXEBgeF+7joNREI4cLuZHA1x+XsLzfo1jvP2Dovk8e+PmyH0TR0\nUwk1JmZlAgMBAAECggEAFOeI9jjbUOFXXNNym1ytJbTiWOmCdRZC9XO7WcNXkgk8\ndesQKtvDrVZUt2SVbnrRz+irSyxLoJ98QcN/joHs81YbMDj5Loexcr0qXIs1dmmv\n0/IdUlbF00Tx/ciRkHWDLUTfuM1g2p7VLFzkim9tsagImXDpFZ8WJathb7y5T5aD\nvcQMbEKB7YLobWvzybZXTw5CxDgW7z3I/3Jglc8hbvB7bvG2I3gEmkSKXLJnFwfS\n+ZkAG1VmIZ7lO8fyl16J5S36fFRhVfSmbct7AboarxKtmJHQV/t/yWzrzkqNNM6l\n4A3xLksGb4z6DXzcSpbWhxKM5eAVKNVQynBfmjb22QKBgQD525fWC0T65pxC3XGY\nwKORSLKkbvqImQsoYd94MX6V2l+MT6wd9DtJW9iEPX/SGtwVCVheuf/APfZ4RVc/\nselPSp7RMu9w0uN2vAn2+vVO3twrfV7IZpbuo5X5fJzOE40APMYrWk66o2By0Cfc\nImuYl6qNHdb1aolj06wGnsMQLQKBgQDG+KZjr5JdycH/8qBXbil7PAa9uSq/xahj\nU8y32YTeKKqR52pesQexD/qMgOLMMF+E3NGbN9VL5N1pVCbqBL5pjrGiw+XqlnZn\nWB3lBKLr0rbKh2aUafMn+5Uj2P0rHQj3nKjiNcIr47RbnBBG0n8bQDgejT643ItZ\ny2b8+lJaGQKBgQC08JWQaDDYEdDvizYMjNTnDWJxOf0slshBwj7258Dn/HBdSAU4\n2/ljMqQlf/Pkz5a5lT7tuny/Vx/6ER0R/2EaDsvca6qCZfZbsej1dt/W8gU3aV8O\neVysDMM7HUbg5b+igGByXL/O4Smje6KiBDsvEgZsk0NsDm7YYB2f3bEdMQKBgQCT\nQ9ITEg2o8P1vbKqUS2rUVTdAEN69FZRt/8YThSE8NKkaWEd4Ulq5CHSOrY4vRtZL\nxgw1b/uksn3VyX0L0/sCsaR0Lb3sBPUZxDRMH0ReepTkDZc03b4kp6ZY4+9ti43p\nhr/Qva07QstoyneZk46UItHmevAjbsiM62kMcFGncQKBgQCTKjvUSEd/yBxzORSV\n1miqvB4nbIjpGjbH3HnObmYaP0vnqN0wVxLIyZmQhv/TxJARqopGNL6lJ4iBEv/C\nbIHR4hnGbHfbEN7fOQYGB1DCm/9B26y+oEf3qlWr67gj+XDQAua/KRQYPPWEdzVl\nDwGFC0o3wcpjX6qntLK6RExahA==\n-----END PRIVATE KEY-----\n",
+    "client_email": "sahaiam@zeta-range-432214-u0.iam.gserviceaccount.com",
+    "client_id": "114759696219976230816",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sahaiam%40zeta-range-432214-u0.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+  

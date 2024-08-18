@@ -1,0 +1,4 @@
+Flask==1.1.4
+Flask-Sockets==0.2.1
+google-cloud-speech==2.0.1
+markupsafe==2.0.1
