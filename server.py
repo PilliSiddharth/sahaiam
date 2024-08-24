@@ -25,7 +25,10 @@ last_update_time = time.time()
 
 current_sentence = ""
 last_timestamp = 0
-sentence_timeout = 2.5
+sentence_timeout = 1.5
+
+conversation_history = []
+
 
 buffer_lock = threading.Lock()
 
@@ -33,7 +36,7 @@ buffer_lock = threading.Lock()
 config = RecognitionConfig(
     encoding=RecognitionConfig.AudioEncoding.MULAW,
     sample_rate_hertz=8000,
-    language_code="te-IN",
+    language_code="hi-IN",
 )
 streaming_config = StreamingRecognitionConfig(config=config, interim_results=True)
 
@@ -89,20 +92,25 @@ def on_transcription_response(response, ws):
 
 def get_gpt_response(prompt):
     """Get response from GPT-4 using the v1/chat/completions endpoint."""
+    global conversation_history
+
+    conversation_history.append({"role": "user", "content": prompt})
     response = openai.ChatCompletion.create(
         model="gpt-4o",  
         messages=[
-            {"role": "system", "content": "You are a helpful assistant who uses simple words and something concise on output, and whatever language the user's uses respond in that language's scripture or writing."},
-            {"role": "user", "content": prompt}
-        ],
+            {"role": "system", "content": "You are a helpful assistant who uses simple words and something concise on output, and whatever language the user's uses respond in that language's scripture or writing. Also very strictly you will see questions or statements be repeated again so ignore that and only concentrate on answering the new questions or statements."},
+        ]+ conversation_history,
         max_tokens=150  
     )
-    return response['choices'][0]['message']['content'].strip()
+    gpt_message = response['choices'][0]['message']['content'].strip()
+    conversation_history.append({"role": "assistant", "content": gpt_message})
+
+    return gpt_message
 
 def send_gpt_response_as_audio(text, ws):
     try:
         # Convert the GPT response to speech (TTS)
-        tts = gTTS(text, lang='te')
+        tts = gTTS(text, lang='hi')
         audio_fp = BytesIO()
         tts.write_to_fp(audio_fp)
         audio_fp.seek(0)
